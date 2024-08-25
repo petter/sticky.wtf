@@ -17,10 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn(inter.className, "bg-slate-100")}>
-        <main className="h-screen w-screen flex items-center justify-center">
+      <body className={cn(inter.className, "text-indigo-900")}>
+        <main className="h-screen w-screen flex justify-center p-4">
           {children}
         </main>
+        <div className="flex">
+          <div className="bg-[#ffb3ba] pt-4 w-4"></div>
+          <div className="bg-[#ffdfba] pt-4 w-4"></div>
+          <div className="bg-[#bffcc6] pt-4 w-4"></div>
+          <div className="bg-[#b3e5fc] pt-4 w-4"></div>
+          <div className="bg-[#d4baff] pt-4 w-4"></div>
+        </div>
       </body>
     </html>
   );
